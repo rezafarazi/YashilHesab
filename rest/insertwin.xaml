@@ -1,0 +1,33 @@
+﻿<Window x:Class="rest.insertwin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="insertwin" Height="442" Width="638" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None" Background="Transparent" Icon="img/tilicon.png">
+    <Grid>
+        <Border Name="mask" CornerRadius="10" Background="#FF293541">
+            
+
+
+        </Border>
+        
+        
+        
+        <TextBox x:Name="textbo1" TextAlignment="Center" HorizontalAlignment="Center" Height="32" Margin="184,160,174,0" TextWrapping="Wrap" Text="نام محصول" VerticalAlignment="Top" Width="280" FontSize="20" Background="#FF293541" Foreground="White" BorderBrush="#FF293541" SelectionBrush="#FF293541" GotFocus="TextBox_GotFocus_1" LostFocus="TextBox_LostFocus_1" KeyDown="TextBox_KeyDown_1"/>
+        <TextBox x:Name="textbo2" TextAlignment="Center" HorizontalAlignment="Center" Height="32" Margin="184,242,174,0" TextWrapping="Wrap" Text="قیمت" VerticalAlignment="Top" Width="280" FontSize="20" Background="#FF293541" Foreground="White" BorderBrush="#FF293541" SelectionBrush="#FF293541" GotFocus="TextBox_GotFocus_1" LostFocus="TextBox_LostFocus_2" KeyDown="textbo2_KeyDown"/>
+        <TextBox x:Name="textbo3" TextAlignment="Center" HorizontalAlignment="Center" Height="32" Margin="184,324,174,0" TextWrapping="Wrap" Text="کد محصول" VerticalAlignment="Top" Width="280" FontSize="20" Background="#FF293541" Foreground="White" BorderBrush="#FF293541" SelectionBrush="#FF293541" GotFocus="TextBox_GotFocus_1" LostFocus="TextBox_LostFocus_3" KeyDown="textbo3_KeyDown"/>
+        <Rectangle Fill="#FFE87E31" Height="90" Margin="0,0,-1,0" Stroke="#FFE87E31" VerticalAlignment="Top" HorizontalAlignment="Right" Width="171"/>
+        <Rectangle Fill="White" Height="90" Stroke="White" VerticalAlignment="Top" Margin="0,0,170,0" MouseDown="Rectangle_MouseDown_1"/>
+        <Image Cursor="Hand" HorizontalAlignment="Left" Height="48" Margin="30,22,0,0" VerticalAlignment="Top" Width="38" Source="img/close.png" MouseLeftButtonUp="Image_MouseLeftButtonUp_1"/>
+        <TextBlock Height="48" Margin="0,26,10,0" TextWrapping="Wrap" Text="تعريف محصول" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" FontSize="20" HorizontalAlignment="Right" Width="138"/>
+        <TextBlock x:Name="textb1" Visibility="Hidden" TextAlignment="Center" HorizontalAlignment="Left" Height="35" Margin="184,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" Foreground="White" FontSize="20" Text="نام محصول"/>
+        <TextBlock x:Name="textb2" Visibility="Hidden" TextAlignment="Center" HorizontalAlignment="Left" Height="35" Margin="184,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" Foreground="White" FontSize="20" Text="قيمت"/>
+        <TextBlock x:Name="textb3" Visibility="Hidden" TextAlignment="Center" HorizontalAlignment="Left" Height="35" Margin="184,289,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" Foreground="White" FontSize="20" Text="كد محصول"/>
+
+        <Image HorizontalAlignment="Left" Height="64" Margin="10,368,0,0" VerticalAlignment="Top" Width="110" Source="img/tilicon.png" Cursor="Hand" PreviewMouseLeftButtonUp="Image_PreviewMouseLeftButtonUp_1"/>
+        <Image Cursor="Hand" HorizontalAlignment="Left" Height="64" Margin="84,368,0,0" VerticalAlignment="Top" Width="110" Source="img/tab.png" PreviewMouseLeftButtonUp="Image_PreviewMouseLeftButtonUp_2"/>
+        <Grid.OpacityMask>
+            <VisualBrush Visual="{Binding ElementName=mask}"/>
+        </Grid.OpacityMask>
+
+
+    </Grid>
+</Window>
